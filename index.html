@@ -3,64 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compra y Gana Puntos</title>
+  <title>Get Your Correct Combination</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
+      background-color: #f0f4f8;
       padding: 20px;
-    }
-    h1 {
       color: #333;
     }
-    p {
-      font-size: 1.2em;
-      color: #555;
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    h2 {
+      color: #34495e;
+    }
+    .instructions-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    .instructions {
+      background-color: #ffffff;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 45%;
+    }
+    .instructions ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .instructions li {
+      margin: 10px 0;
     }
     .links-container {
-      margin-top: 30px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .links-container h2 {
+      color: #2d3436;
     }
     .link-button {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
-      background-color: #0078d7;
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 12px 25px;
+      background-color: #0984e3;
       color: white;
       text-decoration: none;
       font-size: 1em;
+      font-weight: bold;
       border-radius: 5px;
-      width: 200px;
-      text-align: center;
+      border: 2px solid transparent;
+      transition: background-color 0.3s, border-color 0.3s;
     }
     .link-button:hover {
-      background-color: #005bb5;
+      background-color: #74b9ff;
+      border-color: #0984e3;
     }
     footer {
       margin-top: 40px;
+      text-align: center;
       font-size: 0.9em;
-      color: #888;
+      color: #636e72;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #dfe6e9;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #0984e3;
+      color: white;
+    }
+    td {
+      background-color: #f9f9f9;
     }
   </style>
 </head>
 <body>
-  <h1>¡Compra y Gana Puntos!</h1>
-  <p>Sigue estos pasos para ganar puntos:</p>
-  <ol>
-    <li>Haz clic en el producto que te interese.</li>
-    <li>Realiza la compra en Stripe.</li>
-    <li>Recibirás una frase especial. ¡Úsala para canjear tus puntos!</li>
-  </ol>
-  
+  <h1>Get Your Correct Combination</h1>
+
+  <div class="instructions-container">
+    <div class="instructions">
+      <h2>English Instructions</h2>
+      <ol>
+        <li>Click the button that matches the tier you selected on TimeWall/TimeBucks.</li>
+        <li>Complete the form with your details.</li>
+        <li>You will receive the correct combination. Ensure your UserID is correct as shown in the task instructions.</li>
+      </ol>
+    </div>
+    <div class="instructions">
+      <h2>Instrucciones en Español</h2>
+      <ol>
+        <li>Haz clic en el botón que corresponde al tier que seleccionaste en TimeWall/TimeBucks.</li>
+        <li>Completa el formulario con tus datos.</li>
+        <li>Recibirás tu combinación correcta. Asegúrate de ingresar correctamente tu UserID, como se muestra en las instrucciones de la tarea.</li>
+      </ol>
+    </div>
+  </div>
+
   <div class="links-container">
-    <a href="https://buy.stripe.com/test_123" class="link-button">Producto 1</a>
-    <a href="https://buy.stripe.com/test_456" class="link-button">Producto 2</a>
-    <a href="https://buy.stripe.com/test_789" class="link-button">Producto 3</a>
-    <a href="https://buy.stripe.com/test_abc" class="link-button">Producto 4</a>
+    <h2>Choose Your Tier</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tier 1</td>
+          <td>Basic option for beginners.</td>
+          <td><a href="https://buy.stripe.com/dR61644Yh60pdhe3cd" class="link-button">Select Tier 1</a></td>
+        </tr>
+        <tr>
+          <td>Tier 2</td>
+          <td>Intermediate option for more features.</td>
+          <td><a href="https://buy.stripe.com/cN29CAfCV74tb966oq" class="link-button">Select Tier 2</a></td>
+        </tr>
+        <tr>
+          <td>Tier 3</td>
+          <td>Advanced option with full access.</td>
+          <td><a href="https://buy.stripe.com/dR6g0Y0I1fAZ3GE8wz" class="link-button">Select Tier 3</a></td>
+        </tr>
+        <tr>
+          <td>Tier 4</td>
+          <td>Premium option for ultimate benefits.</td>
+          <td><a href="https://buy.stripe.com/dR66qo0I1coN3GE004" class="link-button">Select Tier 4</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   
   <footer>
-    © 2024 Tu Compañía. Todos los derechos reservados.
+    © 2024 CryptoPacha. All rights reserved.
   </footer>
 </body>
 </html>
